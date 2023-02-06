@@ -1,0 +1,5 @@
+06/02/2023
+
+- Creata prima versione del Mock-Up per l'Applicazione Web
+- Creato il Database RiservaBella
+- Creata prima versione dell'applicativo in Java

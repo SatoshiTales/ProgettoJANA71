@@ -1,5 +1,8 @@
 06/02/2023
 
+- Aggiunto readme.txt
+- Aggiunto changelog.txt
 - Creata prima versione del Mock-Up per l'Applicazione Web
-- Creato il Database RiservaBella
+- Creato il Database MySQL "RiservaBella"
+- Create Query di base
 - Creata prima versione dell'applicativo in Java

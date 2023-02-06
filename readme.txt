@@ -1,3 +1,10 @@
+ProgettoJANA71 - RiservaBella
+
+Gruppo D
+
+	Capo: Emanuele Capodiferro
+	Team: Giuseppe Esposito, Pasquale Rubino, Stefano Orefice
+
 Back-end
 
 	Languages: Java

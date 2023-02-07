@@ -1,3 +1,7 @@
+07/02/2023
+- Creato prototipo dell'homepage
+- Creati prototipi di pagine gestionali
+
 06/02/2023
 
 - Aggiunto readme.txt

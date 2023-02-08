@@ -1,0 +1,39 @@
+drop database if exists RISERVA_BELLA;
+create database RISERVA_BELLA;
+use RISERVA_BELLA;
+
+
+create table ADMINS(
+	ID int primary key auto_increment,
+    USERNAME varchar(30) not null default "-",
+    PASS varchar(30) not null default "-"
+);
+
+create table USERS(
+	ID int primary key auto_increment,
+    USERNAME varchar(30) not null default "-",
+    PASS varchar(30) not null default "-",
+    NOME varchar(30) not null default "-",
+    COGNOME varchar(30) not null default "-",
+    DDN date not null default "1970-01-01",
+    EMAIL varchar(50) not null default "-"
+);
+
+create table ANIMALI(
+	ID int primary key auto_increment,
+    NOME varchar(50) not null default "-",
+    SESSO varchar(20) not null default "-",
+    CLASSE varchar(20) not null default "-",
+    IMG varchar(500) not null default "-",
+    DESCR varchar(1000) not null default "_"
+);
+
+
+
+create table PIANTE(
+	ID int primary key auto_increment,
+    NOME varchar(50) not null default "-",
+    FAMIGLIA varchar(50) not null default "-",
+    IMG varchar(500) not null default "-",
+	DESCR varchar(1000) not null default "_"
+);

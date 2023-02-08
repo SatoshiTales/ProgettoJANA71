@@ -1,6 +1,10 @@
 07/02/2023
 - Creato prototipo dell'homepage
+- Aggiunte modifiche richieste all'homepage
 - Creati prototipi di pagine gestionali
+- Ricerca e sviluppo per modifiche a pagine gestionali
+- Creati metodi CRUD
+- Creata versione 2 dell'applicativo Java
 
 06/02/2023
 

@@ -3,6 +3,7 @@
 - Aggiunte pagine dettaglio per Animali e Piante
 - Aggiunti metodi di modifica semplice per Animali e Piante
 - Aggiunta struttura per gestione Login e Utenza
+- Creata RiservaBella02 (applicativo)
 
 07/02/2023
 - Creato prototipo dell'homepage

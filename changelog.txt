@@ -1,3 +1,21 @@
+13/02/2023
+- Completata l'implementazione delle modifiche richieste dal Cliente
+- Ultimato le pagine degli Admin
+- Miglioramento navigazione tra le varie pagine
+- Creato RiservaBella04 (applicativo)
+
+10/02/2023
+- Migliorata la strutta del database
+- Completata la gestione degli animali e delle piante
+- Mostrato il prototipo RisevaBella02.1 al Cliente
+- Inizio implementazione modifiche richieste
+- Creato RisevaBella03 (applicativo)
+
+09/02/2023 
+- Completata la gestione login
+- Completata la struttura base dell'applicativo
+- Creato RisevaBella02.1 (applicativo)
+
 08/02/2023
 - Aggiunta visualizzazione tabella Animali e Piante
 - Aggiunte pagine dettaglio per Animali e Piante

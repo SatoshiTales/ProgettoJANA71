@@ -1,0 +1,106 @@
+drop database if exists RISERVA_BELLA;
+create database RISERVA_BELLA;
+use RISERVA_BELLA;
+
+
+
+create table USERS(
+	ID int primary key auto_increment,
+    USERNAME varchar(30) not null default "-",
+    PASS varchar(30) not null default "-" ,
+	NOME varchar(30) not null default "-",
+    COGNOME varchar(30) not null default "-",
+    DDN date not null default "1970-01-01",
+    EMAIL varchar(50) not null default "-",
+    ISADMIN VARCHAR(10) default "no"
+);
+
+INSERT into USERS (ID, USERNAME, PASS, NOME, COGNOME, DDN, EMAIL, ISADMIN) values (1, "admin", "admin", "admin", "admin", "1970-01-01", "admin", "si");
+INSERT into USERS (ID, USERNAME, PASS, NOME, COGNOME, DDN, EMAIL, ISADMIN) values (2, "Ema", "ema1", "admin", "admin", "1970-01-01", "admin", "si");
+INSERT into USERS (ID, USERNAME, PASS, NOME, COGNOME, DDN, EMAIL, ISADMIN) values (3, "peppe", "peppe", "admin", "admin", "1970-01-01", "admin", "si");
+INSERT into USERS (ID, USERNAME, PASS, NOME, COGNOME, DDN, EMAIL, ISADMIN) values (4, "ste", "taninolove", "admin", "admin", "1970-01-01", "admin", "si");
+INSERT into USERS (ID, USERNAME, PASS, NOME, COGNOME, DDN, EMAIL, ISADMIN) values (5, "paky", "ruby", "admin", "admin", "1970-01-01", "admin", "si");
+INSERT into USERS (ID, USERNAME, PASS, NOME, COGNOME, DDN, EMAIL, ISADMIN) values (6, "user", "user", "utente", "bello", "2023-02-10", "user.com", "no");
+INSERT into USERS (ID, USERNAME, PASS, NOME, COGNOME, DDN, EMAIL) values (8, "tanino", "bellino", "tanino", "bellino", "2023-02-10", "user.com");
+
+
+
+drop table animali;
+create table ANIMALI(
+	ID int primary key auto_increment,
+    NOME varchar(50) not null default "-",
+    SESSO varchar(20) not null default "-",
+    CLASSE varchar(20) not null default "-",
+    IMG varchar(50) not null default "-",
+    DESCR varchar(2000) not null default "_"
+);
+
+insert into ANIMALI (NOME, SESSO, CLASSE, IMG, DESCR) values ('Pygmy possum', 'Male', 'Mammal', 'img/possum.png', "The pygmy possums are a family of small possums that together form the marsupial family Burramyidae. The five extant species of pygmy possum are grouped into two genera. Four of the species are endemic to Australia, with one species also co-occurring in Papua New Guinea and Indonesia. Pygmy possums range in length from about 5 to 12 cm (2.0 to 4.7 in), and usually weigh between 10 and 50 grams (0.35 and 1.76 oz). They are nocturnal and omnivorous, living on a diet of invertebrates, fruit, seed, nectar and pollen. They are excellent climbers, due in part to their prehensile tails. Although they cannot glide like some possums, some species can leap long distances.[2] They have a prehensile tail for grabbing branches, but spend most of their time on the ground.");
+insert into ANIMALI (NOME, SESSO, CLASSE, IMG, DESCR) values ('Shrew, mandras tree', 'Male', 'Mammal', 'img/shrew.png', "The Madras treeshrew (Anathana ellioti), also known as the Indian treeshrew, is a species of treeshrew in the monotypic genus Anathana found in the hill forests of central and southern India. The genus name is derived from the Tamil name of moongil anathaan (literally bamboo squirrel) and the species name is after Sir Walter Elliot of the Indian Civil Services in Madras. This treeshrew is 16.0 to 18.5 cm long with a tail of 16.5 to 19.5 cm. The nominate race (type locality: Eastern Ghats, Madras. British Museum 50.1.21.5) has the tail coloured like the back, the ground colour above being reddish-brown while the feet and hind legs are buff or ochraceous.");
+insert into ANIMALI (NOME, SESSO, CLASSE, IMG, DESCR) values ('Hartebeest, red', 'Male', 'Mammal', 'img/harte.png', "The red hartebeest (Alcelaphus buselaphus caama), also called the Cape hartebeest or Caama, is a subspecies of the hartebeest found in Southern Africa. More than 130,000 individuals live in the wild. The red hartebeest is closely related to the tsessebe and the topi. Alcelaphus buselaphus caama is a large African antelope of the family Bovidae, one of ten subspecies; it is sometimes treated as a separate species, A. caama. Commonly known as the red hartebeest, it is the most colorful hartebeest, with black markings contrasting against its white abdomen and behind. It has a longer face that other subspecies, with complex curving horns joined at the base.");
+insert into ANIMALI (NOME, SESSO, CLASSE, IMG, DESCR) values ('Defassa waterbuck', 'Male', 'Mammal', 'img/waterbuck.png', "The waterbuck (Kobus ellipsiprymnus) is a large antelope found widely in sub-Saharan Africa. It is placed in the genus Kobus of the family Bovidae. It was first described by Irish naturalist William Ogilby in 1833. Its 13 subspecies are grouped under two varieties: the common or ellipsiprymnus waterbuck and the defassa waterbuck. The head-and-body length is typically between 177 and 235 cm (70 and 93 in) and the typical height is between 120 and 136 cm (47 and 54 in). In this sexually dimorphic antelope, males are taller and heavier than females. Males reach roughly 127 cm (50 in) at the shoulder, while females reach 119 cm (47 in). Males typically weigh 198–262 kg (437–578 lb) and females 161–214 kg (355–472 lb). Their coat colour varies from brown to grey. The long, spiral horns, present only on males, curve backward, then forward, and are 55–99 cm (22–39 in) long.");
+insert into ANIMALI (NOME, SESSO, CLASSE, IMG, DESCR) values ('Bushbuck', 'Male', 'Mammal', 'img/bushbuck.png', "The Cape bushbuck (Tragelaphus sylvaticus) is a common, medium-sized bushland-dwelling, and a widespread species of antelope in sub-Saharan Africa.[2][3] It is found in a wide range of habitats, such as rain forests, montane forests, forest-savanna mosaic, savanna, bushveld, and woodland.[3] Its stands around 90 cm (35 in) at the shoulder and weigh from 45 to 80 kg (99 to 176 lb). They are generally solitary, territorial browsers. The taxonomy of bushbuck, and of the Tragelaphini tribe in general, has been contested. Bushbuck have been fractured into over 40 subspecies in the past");
+insert into ANIMALI (NOME, SESSO, CLASSE, IMG, DESCR) values ('African skink', 'Female', 'Reptile', 'img/skink.png', "The African striped skink (Trachylepis striata), commonly called the striped skink, is a species of lizard in the skink family (Scincidae). The species is widespread in East Africa and Southern Africa. It is not a close relation to the Australian striped skink, Ctenotus taeniolatus. T. striata is brown or bronze-coloured with two yellowish stripes that run lengthwise on either side of the spine. Both sexes grow to a total length (including tail) of 25 cm (9.8 in).[2] Their tails are often missing due to predators.");
+insert into ANIMALI (NOME, SESSO, CLASSE, IMG, DESCR) values ('Lapwing (unidentified)', 'Male', 'Bird', 'img/lapwing.png', "Lapwings (subfamily Vanellinae) are any of various ground-nesting birds (family Charadriidae) akin to plovers and dotterels. They range from 10 to 16 inches (25 to 41 cm) in length, and are noted for their slow, irregular wingbeats in flight and a shrill, wailing cry. A group of lapwings is called a deceit.[1] The traditional terms plover, lapwing, and dotterel do not correspond exactly to current taxonomic models; thus, several of the Vanellinae are often called plovers, and one a dotterel, while a few of the true plovers (subfamily Charadriinae) are known colloquially as lapwings. In general, a lapwing can be thought of as a larger plover.");
+insert into ANIMALI (NOME, SESSO, CLASSE, IMG, DESCR) values ('Cat, cape wild', 'Male', 'Mammal', 'img/capecat.png', "The African wild cat is roughly 45 – 75cm long with sandy grey stripes and a characteristic dark stripe running the length of its back, from the neck. But for the distinctive orange on its upper ears (actually more tawny than orange), and paws with black soles (difficult to spot unless you’re up close), they look much like your common household tabby. These cats, however, are a tad more ferocious, and stand a little higher – their legs are longer. They are found in the South African savannah and bushveld where they live largely nocturnal lives and are difficult to catch a glimpse of, unless on a night drive, as they are cautious and reluctant to expose themselves despite having the courage of a lion. Interbreeding with domestic cats has resulted in fewer numbers of the pure strain of African wild cat.");
+insert into ANIMALI (NOME, SESSO, CLASSE, IMG, DESCR) values ('Squirrel, eurasian red', 'Male', 'Mammal', 'img/redsquirrel.png', "The red squirrel (Sciurus vulgaris) is a species of tree squirrel in the genus Sciurus common throughout Europe and Asia. The red squirrel is an arboreal, primarily herbivorous rodent. The red squirrel has a typical head-and-body length of 19 to 23 cm (7+1⁄2 to 9 in), a tail length of 15 to 20 cm (6 to 8 in), and a mass of 250 to 340 g (9 to 12 oz). Males and females are the same size. The red squirrel is somewhat smaller than the eastern grey squirrel which has a head-and-body length of 25 to 30 cm (10 to 12 in) and weighs between 400 and 800 g (14 oz and 1 lb 12 oz).");
+insert into ANIMALI (NOME, SESSO, CLASSE, IMG, DESCR) values ('Crow, american', 'Female', 'Bird', 'img/uscrow.png', "The American crow (Corvus brachyrhynchos) is a large passerine bird species of the family Corvidae. It is a common bird found throughout much of North America. American crows are the New World counterpart to the carrion crow of Europe and the hooded crow of Eurasia; they all occupy the same ecological niche. Although the American crow and the hooded crow are very similar in size, structure and behavior, their calls and visual appearance are different. From beak to tail, an American crow measures 40–50 cm (16–20 in), almost half of which is tail. Mass varies from about 300 to 600 g (11 to 21 oz), with males tending to be larger than females. Plumage is all black, with iridescent feathers. It looks much like other all-black corvids. They are very intelligent, and adaptable to human environments");
+
+create table PIANTE(
+	ID int primary key auto_increment,
+    NOME varchar(50) not null default "-",
+    FAMIGLIA varchar(50) not null default "-",
+    IMG varchar(50) not null default "-",
+	DESCR varchar(2000) not null default "_"
+);
+
+insert into PIANTE (ID, NOME, FAMIGLIA, IMG, DESCR) values (1, 'Tall Ladies''-tresses', 'Orchidaceae', 'img/tallladies.png', "Spiranthes cernua, or Nodding Ladies Tresses, is a herbaceous, perennial wildflower in the orchid family, often found in swamps, meadows, wet roadsides and bogs. It is native to the eastern United States and features small, very fragrant, hooded, white flowers densely arranged in vertical, slightly spiral-like rows on spikes typically growing 9 to 18 inches tall. The blooms appear in late summer to fall, often to first frost. The spiraling flower arrangement is the result of uneven cell growth, which results in a twisting of the flower stems. It is synonymous with and often listed and sold as Spiranthes cerna var. odorata, although the S. odorata has slightly larger flowers. This is one of the few orchids that have a fragrance.");
+insert into PIANTE (ID, NOME, FAMIGLIA, IMG, DESCR) values (2, 'Pale Sage', 'Lamiaceae', 'img/sage.png', "alvia apiana, the white sage, bee sage, or sacred sage is an evergreen perennial shrub that is native to the southwestern United States and northwestern Mexico, found mainly in the coastal sage scrub habitat of Southern California and Baja California, on the western edges of the Mojave and Sonoran deserts. Salvia apiana is a shrub that reaches 1.3 to 1.5 metres (4.3 to 4.9 ft) tall and 1.3 metres (4.3 ft) wide. The whitish evergreen leaves are 3 to 9 cm (1.2 to 3.5 in) and persist throughout the year; they are opposite with crenulate margins. Leaves are thickly covered in hairs that trigger oil glands; when rubbed oils and resins are released, producing a strong aroma.[2] The flowers are very attractive to bees, which is described by the specific epithet, apiana. Several 1 to 1.3 metres (3.3 to 4.3 ft) flower stalks, sometimes pinkish colored, grow above the foliage in the spring. Flowers are white to pale lavender");
+insert into PIANTE (ID, NOME, FAMIGLIA, IMG, DESCR) values (3, 'Purple Wormwood', 'Asteraceae', 'img/wormwood.png', "Artemisia globularia, the purple wormwood,[2] is a rare Asian and North American species of plants in the sunflower family. It is native to Alaska, Yukon Territory, and the Chukotka Autonomous Okrug of Russia.[3][4] Artemisia globularia is a small, clumping perennial up to 30 cm (12 inches) tall. It is slightly aromatic and has many small, yellow flower heads. It grows in arctic and alpine tundra");
+insert into PIANTE (ID, NOME, FAMIGLIA, IMG, DESCR) values (4, 'Slender Monkeyflower', 'Scrophulariaceae', 'img/monkeyflower.png', "Mimulus leptaleus is a species of monkeyflower known by the common name slender monkeyflower. Mimulus leptaleus is a small, hairy annual herb growing at ground level or erect to a maximum height near 14 centimeters. The oppositely arranged leaves are linear or lance-shaped and up to 2. 5 centimeters in length. Mimulus leptaleus is endemic to the Sierra Nevada of California and far western Nevada, where it grows in disturbed habitat and open, rocky slopes.");
+insert into PIANTE (ID, NOME, FAMIGLIA, IMG, DESCR) values (5, 'Karwinskia', 'Rhamnaceae', 'img/karwin.png', "Karwinskia humboldtiana, commonly known as coyotillo, cacachila or Humboldt coyotillo, is a species of flowering shrub or small tree in the family Rhamnaceae. It is native to southern and western Texas in the United States[2] as well as much of Mexico.[1] The seeds and leaves of this plant contain the quinones eleutherin and 7-methoxyeleutherin[3] and chrysophanol and β-amyrin in the fruits[4] that are toxic to humans and livestock.[5] The toxins typically induce paralysis, which is often followed by death. However, it often takes days or even weeks after consumption for the symptoms to manifest");
+insert into PIANTE (ID, NOME, FAMIGLIA, IMG, DESCR) values (6, 'Maleberry', 'Ericaceae', 'img/maleberry.png', "Lyonia ligustrina is a species of flowering plant in the family Ericaceae known by the common names maleberry and he-huckleberry. It is native to the eastern United States from Maine to Florida and west to Texas and Oklahoma.[1] This shrub grows up to 4 meters tall. It has long rhizomes which may send up new stems up to 4 meters apart. The stems have longitudinally furrowed bark. The leaves may be deciduous or not, depending on variety. They are oval in shape and up to 10.5 centimeters long by 5 wide. The small flowers are white. The fruit is a small, dry capsule.[1][2]");
+insert into PIANTE (ID, NOME, FAMIGLIA, IMG, DESCR) values (7, 'Oahu Riverhemp', 'Fabaceae', 'img/oahu.png', "Sesbania tomentosa, commonly known as Oahu riverhemp[3] and ʻōhai, is an endangered species of plant in the pea family, Fabaceae, that is endemic to the main Hawaiian Islands as well as Nihoa and Necker Island. It inhabits low shrublands and, rarely, dry forests,[4] at elevations from sea level to 2,500 ft (760 m).[5] Associated native plant species include akiʻaki (Sporobolus virginicus), ilima (Sida fallax), naupaka kahakai (Scaevola taccada), and pili (Heteropogon contortus).[1] Off-road vehicles, wildfires, grazing, and alien species competition have destroyed their habitat on the main islands, but they are still quite common on Nihoa and Necker. At least 2000 specimens grow on Nihoa, while there are far less on Necker.");
+insert into PIANTE (ID, NOME, FAMIGLIA, IMG, DESCR) values (8, 'Sneezeweed', 'Asteraceae', 'img/sneezeweed.png', "Common sneezeweed is a perennial plant in the daisy or aster family (Asteraceae). Its abundant yellow blooms can be found in late summer to fall, often attracting bees and butterflies. Common sneezeweed can be found in much of the United States, in moist to wet openings, edges, shores, and thickets. Like other members of the aster family, the 1-2 inch sneezeweed flower is composite—with large, showy ray flowers that look like petals, and smaller disk flowers making up the center. The bright yellow petals are wedge-shaped, with three lobes on the outer end, drooping away from the central disk. The center is nearly spherical, projecting above the skirt-like whorl of petals. The center disk flowers are a duller yellow color than the petals. The plant's stem branches near the top, resulting in many flowers on each plant.");
+insert into PIANTE (ID, NOME, FAMIGLIA, IMG, DESCR) values (9, 'Autumn Crocus', 'Liliaceae', 'img/crocus.png', "Colchicum autumnale, commonly known as autumn crocus, meadow saffron,[3] or naked ladies,[4] is a toxic autumn-blooming flowering plant that resembles the true crocuses, but is a member of the plant family Colchicaceae, unlike the true crocuses, which belong to the family Iridaceae. The name naked ladies is because the flowers emerge from the ground long before the leaves appear.[5] Despite the vernacular name of meadow saffron, this plant is not the source of saffron, which is obtained from the saffron crocus, Crocus sativus – and that plant, too, is sometimes called autumn crocus.The species is cultivated as an ornamental in temperate areas, in spite of its toxicity. The cultivar 'Nancy Lindsay' has gained the Royal Horticultural Society’s Award of Garden Merit.[6][7]");
+insert into PIANTE (ID, NOME, FAMIGLIA, IMG, DESCR) values (10, 'Eatons Fleabane', 'Asteraceae', 'img/fleabane.png', "Erigeron eatonii is a North American species of flowering plants in the family Asteraceae known by the common name Eatons fleabane. Erigeron eatonii is a small perennial daisy reaching a maximum height of anywhere from 4 to 30 centimeters (1.6-12.0 inches). It grows from a taproot and has hairy stems which may be erect or drooping. The leaves are narrow and lance-shaped, with three veins and raspy hairs. They are basal and also continue up the stems. Atop each stem is an inflorescence of one or more flower heads, each up to 2.5 centimeters (1 inch) wide. The center is packed with yellow disc florets surrounded by short ray florets around the edge. The rays are bright white, sometimes tinted blue or pink on the undersides.[6]");
+
+create table ADOZIONIA(
+	ID int primary key auto_increment,
+    ID_USER int,
+    ID_ANIMALE int,
+	foreign key (ID_USER) references USERS(ID) on update cascade on delete cascade,
+	foreign key (ID_ANIMALE) references ANIMALI(ID) on update cascade on delete cascade
+);
+
+create table ADOZIONIP(
+	ID int primary key auto_increment,
+    ID_USER int,
+    ID_PIANTA int,
+	foreign key (ID_USER) references USERS(ID) on update cascade on delete cascade,
+	foreign key (ID_PIANTA) references PIANTE(ID) on update cascade on delete cascade
+);
+
+insert into ADOZIONIA values (1, 6, 1);
+insert into ADOZIONIA values (2, 6, 3);
+insert into ADOZIONIA values (3, 6, 4);
+insert into ADOZIONIA values (4, 6, 5);
+insert into ADOZIONIA values (5, 9, 3);
+insert into ADOZIONIA values (6, 6, 3);
+insert into ADOZIONIA values (7, 6, 3);
+insert into ADOZIONIA values (8, 6, 3);
+insert into ADOZIONIA values (9, 9, 3);
+insert into ADOZIONIA values (10, 9, 3);
+insert into ADOZIONIA values (11, 9, 3);
+
+insert into ADOZIONIP values (1, 6, 1);
+insert into ADOZIONIP values (2, 6, 3);
+insert into ADOZIONIP values (3, 6, 4);
+
+create view ADOZIONI_ANIMALI as
+select ID_USER, A.NOME, A.SESSO, A.CLASSE, A.IMG, A.DESCR  from USERS U join ADOZIONIA on U.ID=ID_USER join ANIMALI A on ID_ANIMALE = A.ID;
+
+create view ADOZIONI_PIANTE as
+select ID_USER, P.NOME, P.FAMIGLIA, P.IMG, P.DESCR from USERS join ADOZIONIP on USERS.ID=ID_USER join PIANTE P ON ID_PIANTA=P.ID;
+
+SELECT * FROM ADOZIONI_PIANTE WHERE ID_USER=6;

@@ -1,3 +1,22 @@
+17/02/2023
+- Aggiunto alcune modifiche di design
+- Creato RiservaBellaFinal
+
+16/02/2023
+- Testing completato
+- Creato RiservaBella07
+- Gestione degli errori completata
+- Creato RiservaBella08
+
+15/02/2023
+- Creato RiservaBella05.1
+- Implementato le modifiche richieste dal cliente
+- Creato RiservaBella06
+
+14/02/2023
+- Ultimato il prototipo finale da mostare al Cliente
+- Creato RiservaBella05
+
 13/02/2023
 - Completata l'implementazione delle modifiche richieste dal Cliente
 - Ultimato le pagine degli Admin
